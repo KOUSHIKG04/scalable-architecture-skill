@@ -1,0 +1,43 @@
+{
+  "name": "scalable-architecture-skill",
+  "version": "1.0.1",
+  "description": "A vendor-neutral architecture decision framework for AI coding agents.",
+  "type": "module",
+  "bin": {
+    "scalable-architecture": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "SKILL.md",
+    "references",
+    "templates",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ai",
+    "agents",
+    "architecture",
+    "software-architecture",
+    "coding-agents",
+    "scalability",
+    "system-design",
+    "developer-tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KOUSHIKG04/scalable-architecture-skill.git"
+  },
+  "homepage": "https://github.com/KOUSHIKG04/scalable-architecture-skill#readme",
+  "bugs": {
+    "url": "https://github.com/KOUSHIKG04/scalable-architecture-skill/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
