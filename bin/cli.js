@@ -29,9 +29,11 @@ if (command === "init") {
     console.log(`- Added ${item}`);
   }
 
-  console.log(`\n - Architecture skill installed successfully.
-    
-    Next: Ask your AI coding agent: "Read SKILL.md and use it as the architecture decision framework for this project before implementation."`);
+  console.log(`\n 
+    -- Architecture skill installed successfully.
+
+    -- Next: Ask your AI coding agent: 
+       "Read SKILL.md and use it as the architecture decision framework for this project before implementation."`);
 
   process.exit(0);
 }

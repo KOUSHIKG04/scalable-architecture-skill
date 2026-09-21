@@ -1,17 +1,63 @@
+<div align="center">
+
+<img src="./assets/icon.svg" width="72" height="72" alt="Scalable Architecture Skill Logo" />
+
 # Scalable Architecture Skill
 
-A reusable architecture playbook for AI coding agents.
+**A vendor-neutral architecture decision framework and reusable playbook for AI coding agents.**
 
-It teaches an agent how to turn product requirements into maintainable
-system boundaries, applications, features, contracts, backend
-operations, data access, persistence, shared packages, infrastructure,
-and implementation --- without blindly applying a fixed folder template.
+Turn product requirements into maintainable system boundaries, applications, features, contracts, backend operations, data access, persistence, shared packages, and infrastructure — **without blindly applying a fixed folder template.**
 
-## Core idea
+[![npm version](https://img.shields.io/npm/v/scalable-architecture-skill?color=3C5CD8&style=flat-square)](https://www.npmjs.com/package/scalable-architecture-skill)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
+[![Node: >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=flat-square)](https://nodejs.org)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/KOUSHIKG04/scalable-architecture-skill/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/pulls)
 
-> Architecture is a decision system, not a folder template.
+[Quick Start](#-quick-start) • [Core Idea](#-core-idea) • [What It Optimizes For](#-what-this-skill-optimizes-for) • [When to Use](#-when-to-use-it) • [Agent Usage](#-agent-usage) • [Dependency Model](#-important-dependency-model) • [Scaling Philosophy](#-scaling-philosophy)
 
-``` text
+</div>
+
+---
+
+## ⚡ Quick Start
+
+Initialize the architecture skill, templates, references, and examples into your project in seconds:
+
+```bash
+# Using npm
+npx scalable-architecture-skill init
+
+# Using pnpm
+pnpm dlx scalable-architecture-skill init
+
+# Using bun
+bunx scalable-architecture-skill init
+```
+
+This installs `SKILL.md`, `references/`, `templates/`, and `examples/` directly into your workspace.
+
+---
+
+## 💡 Core Idea
+
+> **Architecture is a decision system, not a folder template.**
+
+```mermaid
+flowchart TD
+    REQ(["Requirements"]) --> SYS["System Architecture"]
+    SYS --> APP["Application Boundaries"]
+    APP --> REPO["Repository Architecture"]
+    REPO --> FEAT["Feature Ownership"]
+    FEAT --> CONTRACT["Contracts / APIs"]
+    CONTRACT --> LOGIC["Application & Domain Logic"]
+    LOGIC --> DATA["Data Access"]
+    DATA --> DB[("Database")]
+    DB --> INFRA["Infrastructure"]
+    INFRA --> IMPL(["Implementation"])
+```
+
+```text
 Requirements
     ↓
 System Architecture
@@ -35,40 +81,45 @@ Infrastructure
 Implementation
 ```
 
-## What this skill optimizes for
+---
 
--   Requirement-driven architecture
--   Clear application and deployment boundaries
--   Feature-first organization
--   Thin route/framework adapters
--   One-way dependency flow
--   Controlled shared packages
--   Platform-aware UI reuse
--   Runtime validation and type safety
--   Trusted authorization boundaries
--   Database isolation
--   Explicit state ownership
--   Evolutionary scalability
--   Machine-enforceable architecture rules
+## 🎯 What This Skill Optimizes For
 
-## When to use it
+| Dimension | Architectural Goals |
+| :--- | :--- |
+| **Requirements & Boundaries** | • Requirement-driven architecture<br>• Clear application and deployment boundaries<br>• Feature-first organization |
+| **Separation & Coupling** | • Thin route/framework adapters<br>• One-way dependency flow<br>• Controlled shared packages<br>• Platform-aware UI reuse |
+| **Correctness & Security** | • Runtime validation and type safety<br>• Trusted authorization boundaries<br>• Database isolation |
+| **Long-Term Evolution** | • Explicit state ownership<br>• Evolutionary scalability<br>• Machine-enforceable architecture rules |
 
-Use this skill when: - starting a new product that may grow beyond one
-small app; - designing a TypeScript monorepo; - building web + mobile +
-admin/operations clients; - restructuring a codebase that has unclear
-ownership; - asking an AI coding agent to scaffold a scalable project; -
-defining architecture before feature implementation.
+---
 
-Do not use it to force a monorepo, microservices, repositories, global
-state, or shared packages onto a project that does not need them.
+## 🧭 When to Use It
 
-## Agent usage
+> [!TIP]
+> ### ✅ Use this skill when:
+> - Starting a new product that may grow beyond one small app
+> - Designing a TypeScript monorepo
+> - Building web + mobile + admin/operations clients
+> - Restructuring a codebase that has unclear ownership
+> - Asking an AI coding agent to scaffold a scalable project
+> - Defining architecture before feature implementation
 
-Give the agent `SKILL.md` together with your project requirements.
+> [!WARNING]
+> ### ❌ Do NOT use it to:
+> - Force a monorepo, microservices, repository layers, global state, or shared packages onto a project that does not need them. Every layer must be justified by a real requirement.
 
-Recommended first prompt:
+---
 
-``` text
+## 🤖 Agent Usage
+
+Feed `SKILL.md` to your AI coding agent together with your project requirements, following this 3-phase workflow:
+
+### Phase 1: Architecture Discovery & Proposal
+
+Provide your agent with `SKILL.md` and your `REQUIREMENTS.md`.
+
+```text
 Read SKILL.md completely and treat it as the architecture decision framework for this project.
 
 Read REQUIREMENTS.md.
@@ -76,23 +127,23 @@ Read REQUIREMENTS.md.
 Do not create or modify project files yet.
 
 Produce:
-1. Requirement interpretation
-2. Architecture decisions and trade-offs
-3. System architecture
-4. Application/deployment boundaries
-5. Repository tree
-6. Application and feature architecture
-7. Backend architecture
-8. Database architecture
-9. Shared package strategy
-10. Dependency rules
-11. Critical request/data flows
-12. Authentication and authorization strategy
-13. Environment/config strategy
-14. Testing strategy
-15. Scalability strategy
-16. Architecture guardrails
-17. Initial implementation plan
+- Requirement interpretation
+- Architecture decisions and trade-offs
+- System architecture
+- Application/deployment boundaries
+- Repository tree
+- Application and feature architecture
+- Backend architecture
+- Database architecture
+- Shared package strategy
+- Dependency rules
+- Critical request/data flows
+- Authentication and authorization strategy
+- Environment/config strategy
+- Testing strategy
+- Scalability strategy
+- Architecture guardrails
+- Initial implementation plan
 
 For every proposed application, package, service, global store, cache, queue, or architectural layer, state the concrete requirement that justifies it.
 
@@ -101,9 +152,13 @@ Remove unjustified abstractions.
 Wait for architecture approval before scaffolding implementation.
 ```
 
-After approving the architecture:
+---
 
-``` text
+### Phase 2: Architecture Approval & Vertical Slice Scaffolding
+
+Once you review and approve the proposal, instruct the agent to scaffold:
+
+```text
 Architecture approved.
 
 Scaffold the project according to the approved architecture and SKILL.md.
@@ -119,101 +174,137 @@ Implement one minimal end-to-end vertical slice to prove the architecture.
 Run typecheck, lint, tests, architecture checks, and build.
 ```
 
-Then build features vertically:
+---
 
-``` text
+### Phase 3: Vertical Feature Implementation
+
+Build product features vertically one by one while keeping boundaries intact:
+
+```text
 Implement <FEATURE> end-to-end using SKILL.md and the approved architecture.
 
 Trace:
 UI / Client
-↓
+    ↓
 Route / Adapter
-↓
+    ↓
 Owning Feature
-↓
+    ↓
 Runtime Validation
-↓
+    ↓
 Authentication / Authorization
-↓
+    ↓
 Application / Domain Logic
-↓
+    ↓
 Data Access
-↓
+    ↓
 Database / Integration
-↓
+    ↓
 Response / Cache
-↓
+    ↓
 UI Update
 
 Keep feature ownership and dependency boundaries intact.
 Add the appropriate tests and run all architecture checks.
 ```
 
-## Toolkit structure
-
-``` text
-scalable-architecture-skill/
-├── SKILL.md
-├── README.md
-├── LICENSE
-├── examples/
-│   ├── simple-saas.md
-│   ├── multi-app-platform.md
-│   └── realtime-platform.md
-├── templates/
-│   ├── REQUIREMENTS.md
-│   └── ARCHITECTURE_PROPOSAL.md
-├── scripts/
-│   └── check-architecture.mjs
-└── .github/
-    └── workflows/
-        └── architecture.yml
+```mermaid
+flowchart TD
+    UI1["UI / Client"] --> ROUTE["Route / Adapter"]
+    ROUTE --> FEAT["Owning Feature"]
+    FEAT --> VAL["Runtime Validation"]
+    VAL --> AUTH["Authentication / Authorization"]
+    AUTH --> DOMAIN["Application / Domain Logic"]
+    DOMAIN --> DATA["Data Access"]
+    DATA --> DB[("Database / Integration")]
+    DB --> RESP["Response / Cache"]
+    RESP --> UI2["UI Update"]
 ```
 
-## Scaling philosophy
+---
 
-The skill distinguishes four kinds of scale.
+## 📦 Toolkit Structure
 
-**Codebase scale:** add features without turning `components/`,
-`utils/`, `services/`, or global state into dumping grounds.
+```text
+scalable-architecture-skill/
+├── .github/
+│   └── workflows/
+│       └── architecture.yml          # Automated boundary verification in CI
+├── assets/
+│   └── icon.svg                      # Skill icon and visual branding
+├── bin/
+│   └── cli.js                        # CLI runner (npx scalable-architecture-skill init)
+├── examples/
+│   ├── simple-saas.md                # Single-app SaaS architecture example
+│   ├── multi-app-platform.md         # Multi-client (web, mobile, admin) platform
+│   └── realtime-platform.md          # Realtime, queue, and worker topology
+├── references/
+│   ├── architecture-principles.md    # In-depth architectural guidelines
+│   ├── dependency-rules.md           # Machine-checkable boundary rules
+│   └── scalability-guide.md          # Scaling dimensions and tactics
+├── scripts/
+│   └── check-architecture.mjs        # Script to assert dependency boundaries
+├── templates/
+│   ├── REQUIREMENTS.md               # Product requirement specification template
+│   └── ARCHITECTURE_PROPOSAL.md      # Standard architectural review template
+├── LICENSE                           # MIT License
+├── package.json                      # Package metadata and CLI config
+├── README.md                         # Documentation and playbook overview
+└── SKILL.md                          # Core architectural playbook for AI agents
+```
 
-**Application scale:** add new clients while keeping apps independent
-and moving only genuinely shared responsibilities into packages.
+---
 
-**Team scale:** make ownership visible so teams can work on separate
-features/apps without constant cross-module modification.
+## 📈 Scaling Philosophy
 
-**Infrastructure scale:** begin with the simplest trusted backend and
-database topology, then introduce caching, queues, workers, realtime, or
-independent services only when measured requirements justify them.
+The skill distinguishes **four distinct kinds of scale**:
 
-## Important dependency model
+| Scale Dimension | Focus & Resolution |
+| :--- | :--- |
+| 🧩 **Codebase Scale** | Add features without turning `components/`, `utils/`, `services/`, or global state into dumping grounds. |
+| 📱 **Application Scale** | Add new clients while keeping apps independent and moving only genuinely shared responsibilities into packages. |
+| 👥 **Team Scale** | Make ownership visible so teams can work on separate features/apps without constant cross-module modification. |
+| ⚙️ **Infrastructure Scale** | Begin with the simplest trusted backend and database topology, then introduce caching, queues, workers, realtime, or independent services only when measured requirements justify them. |
 
-``` text
+---
+
+## 📐 Important Dependency Model
+
+```mermaid
+flowchart TD
+    ROUTES["Routes / Transport"] --> FEATURES["Features / Application"]
+    FEATURES --> CONTRACTS["Contracts / Domain Rules"]
+    CONTRACTS --> DATA["Data Access"]
+    DATA --> DB[("Database / External Systems")]
+```
+
+```text
 Routes / Transport
-        ↓
+    ↓
 Features / Application
-        ↓
+    ↓
 Contracts / Domain Rules
-        ↓
+    ↓
 Data Access
-        ↓
+    ↓
 Database / External Systems
 ```
 
-Shared packages never depend on applications. Applications never import
-another application's source.
+> [!IMPORTANT]
+> - **Shared packages never depend on applications.**
+> - **Applications never import another application's source.**
 
-## Reference philosophy
+---
 
-This toolkit was generalized from a real multi-application TypeScript
-architecture containing independently owned mobile/web applications,
-feature-oriented modules, shared design tokens, platform UI packages,
-contracts/data-access boundaries, and backend infrastructure.
+## 🏛️ Reference Philosophy
 
-The reference implementation is evidence for the principles, not a
-directory tree that new projects must clone.
+This toolkit was generalized from a real multi-application TypeScript architecture containing independently owned mobile/web applications, feature-oriented modules, shared design tokens, platform UI packages, contracts/data-access boundaries, and backend infrastructure.
 
-## License
+The reference implementation is evidence for the principles, not a directory tree that new projects must clone.
 
-MIT.
+---
+
+## 📄 License
+
+[MIT](./LICENSE) © [KOUSHIK G](https://github.com/KOUSHIKG04)
+
