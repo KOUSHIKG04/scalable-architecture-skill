@@ -44,7 +44,7 @@ This installs `SKILL.md`, `references/`, `templates/`, and `examples/` directly 
 > **Architecture is a decision system, not a folder template.**
 
 ```mermaid
-flowchart TD
+flowchart LR
     REQ(["Requirements"]) --> SYS["System Architecture"]
     SYS --> APP["Application Boundaries"]
     APP --> REPO["Repository Architecture"]
@@ -56,31 +56,6 @@ flowchart TD
     DB --> INFRA["Infrastructure"]
     INFRA --> IMPL(["Implementation"])
 ```
-
-```text
-Requirements
-    ↓
-System Architecture
-    ↓
-Application Boundaries
-    ↓
-Repository Architecture
-    ↓
-Feature Ownership
-    ↓
-Contracts / APIs
-    ↓
-Application & Domain Logic
-    ↓
-Data Access
-    ↓
-Database
-    ↓
-Infrastructure
-    ↓
-Implementation
-```
-
 ---
 
 ## 🎯 What This Skill Optimizes For
@@ -94,20 +69,32 @@ Implementation
 
 ---
 
-## 🧭 When to Use It
+## 🧭 When to Use **It**
 
-> [!TIP]
-> ### ✅ Use this skill when:
-> - Starting a new product that may grow beyond one small app
-> - Designing a TypeScript monorepo
-> - Building web + mobile + admin/operations clients
-> - Restructuring a codebase that has unclear ownership
-> - Asking an AI coding agent to scaffold a scalable project
-> - Defining architecture before feature implementation
+<table width="100%">
+<tr>
+<th width="50%" align="left">💡 <b>TIP — When to Use</b></th>
+<th width="50%" align="left">⚠️ <b>WARNING — When NOT to Use</b></th>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-> [!WARNING]
-> ### ❌ Do NOT use it to:
-> - Force a monorepo, microservices, repository layers, global state, or shared packages onto a project that does not need them. Every layer must be justified by a real requirement.
+• Starting a new product that may grow beyond one small app<br>
+• Designing a TypeScript monorepo<br>
+• Building web + mobile + admin/operations clients<br>
+• Restructuring a codebase that has unclear ownership<br>
+• Asking an AI coding agent to scaffold a scalable project<br>
+• Defining architecture before feature implementation
+
+</td>
+<td width="50%" valign="top">
+
+• Do <b>not</b> force a monorepo, microservices, repository layers, global state, or shared packages onto a project that does not need them.<br><br>
+• Every architectural layer, package, and boundary must be justified by a real requirement.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -180,36 +167,10 @@ Run typecheck, lint, tests, architecture checks, and build.
 
 Build product features vertically one by one while keeping boundaries intact:
 
-```text
-Implement <FEATURE> end-to-end using SKILL.md and the approved architecture.
 
-Trace:
-UI / Client
-    ↓
-Route / Adapter
-    ↓
-Owning Feature
-    ↓
-Runtime Validation
-    ↓
-Authentication / Authorization
-    ↓
-Application / Domain Logic
-    ↓
-Data Access
-    ↓
-Database / Integration
-    ↓
-Response / Cache
-    ↓
-UI Update
-
-Keep feature ownership and dependency boundaries intact.
-Add the appropriate tests and run all architecture checks.
-```
 
 ```mermaid
-flowchart TD
+flowchart LR
     UI1["UI / Client"] --> ROUTE["Route / Adapter"]
     ROUTE --> FEAT["Owning Feature"]
     FEAT --> VAL["Runtime Validation"]
@@ -271,23 +232,11 @@ The skill distinguishes **four distinct kinds of scale**:
 ## 📐 Important Dependency Model
 
 ```mermaid
-flowchart TD
+flowchart LR
     ROUTES["Routes / Transport"] --> FEATURES["Features / Application"]
     FEATURES --> CONTRACTS["Contracts / Domain Rules"]
     CONTRACTS --> DATA["Data Access"]
     DATA --> DB[("Database / External Systems")]
-```
-
-```text
-Routes / Transport
-    ↓
-Features / Application
-    ↓
-Contracts / Domain Rules
-    ↓
-Data Access
-    ↓
-Database / External Systems
 ```
 
 > [!IMPORTANT]

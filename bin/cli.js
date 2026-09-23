@@ -7,7 +7,13 @@ const __filename = fileURLToPath(import.meta.url); const __dirname = path.dirnam
 
 if (command === "init") {
   const packageRoot = path.resolve(__dirname, "..");
-  const targetRoot = process.cwd();
+  
+  const targetRoot = path.join(
+  process.cwd(),".architecture",
+  "scalable-project-architecture"
+  )
+
+  fs.mkdirSync(targetRoot, { recursive: true })
 
   const filesToCopy = ["SKILL.md", "references", "templates", "examples"];
 

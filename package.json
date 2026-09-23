@@ -1,6 +1,6 @@
 {
   "name": "scalable-architecture-skill",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A vendor-neutral architecture decision framework for AI coding agents.",
   "type": "module",
   "bin": {
