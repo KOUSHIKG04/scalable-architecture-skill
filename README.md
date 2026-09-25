@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="./assets/icon.svg" width="72" height="72" alt="Scalable Architecture Skill Logo" />
+<img src="./assets/icon.svg" width="72" height="72" alt="Adpt-Exemplar Skill Logo" />
 
-# Scalable Architecture Skill
+# Adpt-Exemplar
 
 **A vendor-neutral architecture decision framework and reusable playbook for AI coding agents.**
 
 Turn product requirements into maintainable system boundaries, applications, features, contracts, backend operations, data access, persistence, shared packages, and infrastructure — **without blindly applying a fixed folder template.**
 
-[![npm version](https://img.shields.io/npm/v/scalable-architecture-skill?color=3C5CD8&style=flat-square)](https://www.npmjs.com/package/scalable-architecture-skill)
+[![npm version](https://img.shields.io/npm/v/adpt-exemplar?color=3C5CD8&style=flat-square)](https://www.npmjs.com/package/adpt-exemplar)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![Node: >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=flat-square)](https://nodejs.org)
-[![CI Status](https://img.shields.io/github/actions/workflow/status/KOUSHIKG04/scalable-architecture-skill/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/actions)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/pulls)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/KOUSHIKG04/adpt-exemplar/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/KOUSHIKG04/adpt-exemplar/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/KOUSHIKG04/adpt-exemplar/pulls)
 
 [Quick Start](#-quick-start) • [Core Idea](#-core-idea) • [What It Optimizes For](#-what-this-skill-optimizes-for) • [When to Use](#-when-to-use-it) • [Agent Usage](#-agent-usage) • [Dependency Model](#-important-dependency-model) • [Scaling Philosophy](#-scaling-philosophy)
 
@@ -26,13 +26,13 @@ Initialize the architecture skill, templates, references, and examples into your
 
 ```bash
 # Using npm
-npx scalable-architecture-skill init
+npx adpt-exemplar init
 
 # Using pnpm
-pnpm dlx scalable-architecture-skill init
+pnpm dlx adpt-exemplar init
 
 # Using bun
-bunx scalable-architecture-skill init
+bunx adpt-exemplar init
 ```
 
 This installs `SKILL.md`, `references/`, `templates/`, and `examples/` directly into your workspace.
@@ -187,14 +187,14 @@ flowchart LR
 ## 📦 Toolkit Structure
 
 ```text
-scalable-architecture-skill/
+adpt-exemplar/
 ├── .github/
 │   └── workflows/
 │       └── architecture.yml          # Automated boundary verification in CI
 ├── assets/
 │   └── icon.svg                      # Skill icon and visual branding
 ├── bin/
-│   └── cli.js                        # CLI runner (npx scalable-architecture-skill init)
+│   └── cli.js                        # CLI runner (npx adpt-exemplar init)
 ├── examples/
 │   ├── simple-saas.md                # Single-app SaaS architecture example
 │   ├── multi-app-platform.md         # Multi-client (web, mobile, admin) platform

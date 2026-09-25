@@ -3,10 +3,10 @@ description: Design and evolve scalable multi-application TypeScript
   projects using requirement-driven boundaries, feature ownership, thin
   routing layers, disciplined shared packages, controlled data access,
   and enforceable dependency rules.
-name: scalable-project-architecture
+name: adpt-exemplar
 ---
 
-# Scalable Project Architecture Skill
+# Adpt-Exemplar Skill
 
 ## 1. Purpose
 

@@ -1,10 +1,10 @@
 {
-  "name": "scalable-architecture-skill",
+  "name": "adpt-exemplar",
   "version": "1.0.2",
   "description": "A vendor-neutral architecture decision framework for AI coding agents.",
   "type": "module",
   "bin": {
-    "scalable-architecture": "./bin/cli.js"
+    "adpt-exemplar": "./bin/cli.js"
   },
   "files": [
     "bin",

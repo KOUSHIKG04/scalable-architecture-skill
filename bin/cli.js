@@ -10,14 +10,14 @@ if (command === "init") {
   
   const targetRoot = path.join(
   process.cwd(),".architecture",
-  "scalable-project-architecture"
+  "adpt-exemplar"
   )
 
   fs.mkdirSync(targetRoot, { recursive: true })
 
   const filesToCopy = ["SKILL.md", "references", "templates", "examples"];
 
-  console.log("\n🏗️  Scalable Architecture Skill\n");
+  console.log("\n🏗️  Adpt-Exemplar Skill\n");
 
   for (const item of filesToCopy) {
     const source = path.join(packageRoot, item);
@@ -36,7 +36,7 @@ if (command === "init") {
   }
 
   console.log(`\n 
-    -- Architecture skill installed successfully.
+    -- Adpt-Exemplar skill installed successfully.
 
     -- Next: Ask your AI coding agent: 
        "Read SKILL.md and use it as the architecture decision framework for this project before implementation."`);
@@ -53,17 +53,17 @@ if (command === "--version" || command === "-v") {
   process.exit(0);
 }
 
-console.log(`\n Scalable Architecture Skill
+console.log(`\n Adpt-Exemplar Skill
 
     Usage:
-    scalable-architecture init
+    adpt-exemplar init
     
     Commands:
-    init          Install the architecture skill
+    init          Install the adpt-exemplar skill
     --version     Show installed version
     
     Examples:
-    npx scalable-architecture-skill init
-    pnpm dlx scalable-architecture-skill init
-    bunx scalable-architecture-skill init
+    npx adpt-exemplar init
+    pnpm dlx adpt-exemplar init
+    bunx adpt-exemplar init
 `);
