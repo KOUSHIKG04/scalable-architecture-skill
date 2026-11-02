@@ -1,18 +1,16 @@
 <div align="center">
 
-<img src="./assets/icon.svg" width="72" height="72" alt="Adpt-Exemplar Skill Logo" />
+<img src="./assets/icon.svg" width="72" height="72" alt="Vaastu Skill Logo" />
 
-# Adpt-Exemplar
+# Vaastu
 
 **A vendor-neutral architecture decision framework and reusable playbook for AI coding agents.**
 
 Turn product requirements into maintainable system boundaries, applications, features, contracts, backend operations, data access, persistence, shared packages, and infrastructure — **without blindly applying a fixed folder template.**
 
-[![npm version](https://img.shields.io/npm/v/adpt-exemplar?color=3C5CD8&style=flat-square)](https://www.npmjs.com/package/adpt-exemplar)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Node: >=18](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=flat-square)](https://nodejs.org)
-[![CI Status](https://img.shields.io/github/actions/workflow/status/KOUSHIKG04/adpt-exemplar/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/KOUSHIKG04/adpt-exemplar/actions)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/KOUSHIKG04/adpt-exemplar/pulls)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/kousshiikg/scalable-architecture-skill/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/kousshiikg/scalable-architecture-skill/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/kousshiikg/scalable-architecture-skill/pulls)
 
 [Quick Start](#-quick-start) • [Core Idea](#-core-idea) • [What It Optimizes For](#-what-this-skill-optimizes-for) • [When to Use](#-when-to-use-it) • [Agent Usage](#-agent-usage) • [Dependency Model](#-important-dependency-model) • [Scaling Philosophy](#-scaling-philosophy)
 
@@ -22,20 +20,33 @@ Turn product requirements into maintainable system boundaries, applications, fea
 
 ## ⚡ Quick Start
 
-Initialize the architecture skill, templates, references, and examples into your project in seconds:
+Install from your project with the shared [Skills CLI](https://github.com/vercel-labs/skills), the same installer used by Vercel’s agent skills. The current Skills CLI requires Node.js 22.20 or later.
 
 ```bash
-# Using npm
-npx adpt-exemplar init
+npx skills add kousshiikg/scalable-architecture-skill --skill vaastu
 
-# Using pnpm
-pnpm dlx adpt-exemplar init
-
-# Using bun
-bunx adpt-exemplar init
+# Other package runners
+pnpm dlx skills add kousshiikg/scalable-architecture-skill --skill vaastu
+bunx skills add kousshiikg/scalable-architecture-skill --skill vaastu
 ```
 
-This installs `SKILL.md`, `references/`, `templates/`, and `examples/` directly into your workspace.
+Choose the agents and installation method when prompted. Installation is project-local by default; add `-g` for a user-wide installation. The CLI manages agent-specific locations and links. For Codex, the project skill is available at `.agents/skills/vaastu/SKILL.md`.
+
+```bash
+# List available skills without installing
+npx skills add kousshiikg/scalable-architecture-skill --list
+
+# Target Codex explicitly
+npx skills add kousshiikg/scalable-architecture-skill --skill vaastu -a codex
+
+# Check and update installed skills
+npx skills check
+npx skills update
+```
+
+Review local edits before updating. Old `.architecture/` installations are not moved automatically.
+
+Vaastu is a folder of instructions and resources, not a standalone installer. There is no `init` step. GitHub distribution through the Skills CLI does not require publishing Vaastu to npm. `package.json` is retained for development checks and optional archive distribution; it does not expose a custom executable.
 
 ---
 
@@ -107,7 +118,7 @@ Feed `SKILL.md` to your AI coding agent together with your project requirements,
 Provide your agent with `SKILL.md` and your `REQUIREMENTS.md`.
 
 ```text
-Read SKILL.md completely and treat it as the architecture decision framework for this project.
+Read .agents/skills/vaastu/SKILL.md completely and treat it as the architecture decision framework for this project.
 
 Read REQUIREMENTS.md.
 
@@ -187,31 +198,22 @@ flowchart LR
 ## 📦 Toolkit Structure
 
 ```text
-adpt-exemplar/
-├── .github/
-│   └── workflows/
-│       └── architecture.yml          # Automated boundary verification in CI
-├── assets/
-│   └── icon.svg                      # Skill icon and visual branding
-├── bin/
-│   └── cli.js                        # CLI runner (npx adpt-exemplar init)
-├── examples/
-│   ├── simple-saas.md                # Single-app SaaS architecture example
-│   ├── multi-app-platform.md         # Multi-client (web, mobile, admin) platform
-│   └── realtime-platform.md          # Realtime, queue, and worker topology
-├── references/
-│   ├── architecture-principles.md    # In-depth architectural guidelines
-│   ├── dependency-rules.md           # Machine-checkable boundary rules
-│   └── scalability-guide.md          # Scaling dimensions and tactics
-├── scripts/
-│   └── check-architecture.mjs        # Script to assert dependency boundaries
-├── templates/
-│   ├── REQUIREMENTS.md               # Product requirement specification template
-│   └── ARCHITECTURE_PROPOSAL.md      # Standard architectural review template
-├── LICENSE                           # MIT License
-├── package.json                      # Package metadata and CLI config
-├── README.md                         # Documentation and playbook overview
-└── SKILL.md                          # Core architectural playbook for AI agents
+repository/
+├── skills/
+│   └── vaastu/
+│       ├── SKILL.md                 # Name, description, concise workflow
+│       ├── references/              # Detailed guidance loaded as needed
+│       ├── templates/               # Requirements and proposal templates
+│       ├── examples/                # Illustrative architectures
+│       ├── scripts/
+│       │   └── check-architecture.mjs # Adaptable boundary-check starter
+│       └── LICENSE.txt
+├── tests/                          # Maintainer checks, never installed
+├── .github/workflows/              # Maintainer CI, never installed
+├── assets/                         # Repository branding
+├── package.json                    # Development and optional archive metadata
+├── README.md
+└── LICENSE
 ```
 
 ---
@@ -255,5 +257,5 @@ The reference implementation is evidence for the principles, not a directory tre
 
 ## 📄 License
 
-[MIT](./LICENSE) © [KOUSHIK G](https://github.com/KOUSHIKG04)
+[MIT](./LICENSE) © [KOUSHIK G](https://github.com/kousshiikg)
 

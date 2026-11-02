@@ -15,5 +15,8 @@ jobs:
         with:
           node-version: 22
 
+      - name: Validate skill resources
+        run: npm test
+
       - name: Check architecture boundaries
-        run: node scripts/check-architecture.mjs
+        run: node skills/vaastu/scripts/check-architecture.mjs

@@ -1,12 +1,5 @@
----
-description: Design and evolve scalable multi-application TypeScript
-  projects using requirement-driven boundaries, feature ownership, thin
-  routing layers, disciplined shared packages, controlled data access,
-  and enforceable dependency rules.
-name: adpt-exemplar
----
 
-# Adpt-Exemplar Skill
+# Vaastu Skill
 
 ## 1. Purpose
 
