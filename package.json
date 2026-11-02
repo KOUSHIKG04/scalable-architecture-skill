@@ -1,6 +1,6 @@
 {
   "name": "vaastu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A vendor-neutral architecture decision framework for AI coding agents.",
   "type": "module",
   "files": [
@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kousshiikg/scalable-architecture-skill.git"
+    "url": "git+https://github.com/kousshiikg/scalable-architecture.git"
   },
-  "homepage": "https://github.com/kousshiikg/scalable-architecture-skill#readme",
+  "homepage": "https://github.com/kousshiikg/scalable-architecture#readme",
   "bugs": {
-    "url": "https://github.com/kousshiikg/scalable-architecture-skill/issues"
+    "url": "https://github.com/kousshiikg/scalable-architecture/issues"
   },
   "license": "MIT",
   "engines": {
