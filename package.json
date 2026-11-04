@@ -1,6 +1,6 @@
 {
   "name": "vaastu",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A vendor-neutral architecture decision framework for AI coding agents.",
   "type": "module",
   "files": [
