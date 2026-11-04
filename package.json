@@ -6,7 +6,8 @@
   "files": [
     "skills",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "assets"
   ],
   "keywords": [
     "ai",
@@ -34,6 +35,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "node --test tests/skill.test.mjs"
+    "test": "node --test tests/skill.test.mjs",
+    "diagrams": "node tools/generate-readme-diagrams.mjs"
   }
 }

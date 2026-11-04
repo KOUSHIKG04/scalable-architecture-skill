@@ -26,7 +26,7 @@ test("skill is self-contained and every linked resource is shipped", () => {
 test("distribution contains the standard skill folder without a custom installer", () => {
   const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
   assert.equal(pkg.bin, undefined);
-  assert.deepEqual(pkg.files, ["skills", "README.md", "LICENSE"]);
+  assert.deepEqual(pkg.files, ["skills", "README.md", "LICENSE", "assets"]);
   assert.equal(fs.existsSync(path.join(root, "SKILL.md")), false);
   assert.equal(fs.existsSync(path.join(root, "bin", "cli.js")), false);
 });

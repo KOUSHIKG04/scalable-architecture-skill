@@ -54,19 +54,7 @@ Vaastu is a folder of instructions and resources, not a standalone installer. Th
 
 > **Architecture is a decision system, not a folder template.**
 
-```mermaid
-flowchart LR
-    REQ(["Requirements"]) --> SYS["System Architecture"]
-    SYS --> APP["Application Boundaries"]
-    APP --> REPO["Repository Architecture"]
-    REPO --> FEAT["Feature Ownership"]
-    FEAT --> CONTRACT["Contracts / APIs"]
-    CONTRACT --> LOGIC["Application & Domain Logic"]
-    LOGIC --> DATA["Data Access"]
-    DATA --> DB[("Database")]
-    DB --> INFRA["Infrastructure"]
-    INFRA --> IMPL(["Implementation"])
-```
+![Architecture decision flow: requirements through system boundaries, features, contracts, data, infrastructure, and implementation](https://raw.githubusercontent.com/KOUSHIKG04/scalable-architecture-skill/main/assets/architecture-flow.svg)
 ---
 
 ## 🎯 What This Skill Optimizes For
@@ -180,18 +168,7 @@ Build product features vertically one by one while keeping boundaries intact:
 
 
 
-```mermaid
-flowchart LR
-    UI1["UI / Client"] --> ROUTE["Route / Adapter"]
-    ROUTE --> FEAT["Owning Feature"]
-    FEAT --> VAL["Runtime Validation"]
-    VAL --> AUTH["Authentication / Authorization"]
-    AUTH --> DOMAIN["Application / Domain Logic"]
-    DOMAIN --> DATA["Data Access"]
-    DATA --> DB[("Database / Integration")]
-    DB --> RESP["Response / Cache"]
-    RESP --> UI2["UI Update"]
-```
+![Vertical feature flow: UI through validation, authorization, domain logic, persistence, and response](https://raw.githubusercontent.com/KOUSHIKG04/scalable-architecture-skill/main/assets/vertical-feature-flow.svg)
 
 ---
 
@@ -210,7 +187,8 @@ repository/
 │       └── LICENSE.txt
 ├── tests/                          # Maintainer checks, never installed
 ├── .github/workflows/              # Maintainer CI, never installed
-├── assets/                         # Repository branding
+├── assets/                         # Branding and portable README diagrams
+├── tools/generate-readme-diagrams.mjs # Regenerate README SVGs
 ├── package.json                    # Development and optional archive metadata
 ├── README.md
 └── LICENSE
@@ -233,13 +211,7 @@ The skill distinguishes **four distinct kinds of scale**:
 
 ## 📐 Important Dependency Model
 
-```mermaid
-flowchart LR
-    ROUTES["Routes / Transport"] --> FEATURES["Features / Application"]
-    FEATURES --> CONTRACTS["Contracts / Domain Rules"]
-    CONTRACTS --> DATA["Data Access"]
-    DATA --> DB[("Database / External Systems")]
-```
+![Dependency direction: routes to features, portable contracts, data access, and external systems](https://raw.githubusercontent.com/KOUSHIKG04/scalable-architecture-skill/main/assets/dependency-model.svg)
 
 > [!IMPORTANT]
 > - **Shared packages never depend on applications.**
