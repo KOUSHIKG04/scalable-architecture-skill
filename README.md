@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/icon.svg" width="72" height="72" alt="Vaastu Skill Logo" />
+<img src="https://raw.githubusercontent.com/KOUSHIKG04/scalable-architecture-skill/main/assets/icon.svg" width="72" height="72" alt="Vaastu Skill Logo" />
 
 # Vaastu
 
@@ -8,9 +8,9 @@
 
 Turn product requirements into maintainable system boundaries, applications, features, contracts, backend operations, data access, persistence, shared packages, and infrastructure — **without blindly applying a fixed folder template.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![CI Status](https://img.shields.io/github/actions/workflow/status/kousshiikg/scalable-architecture/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/kousshiikg/scalable-architecture/actions)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/kousshiikg/scalable-architecture/pulls)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/blob/main/LICENSE)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/KOUSHIKG04/scalable-architecture-skill/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/pulls)
 
 [Quick Start](#-quick-start) • [Core Idea](#-core-idea) • [What It Optimizes For](#-what-this-skill-optimizes-for) • [When to Use](#-when-to-use-it) • [Agent Usage](#-agent-usage) • [Dependency Model](#-important-dependency-model) • [Scaling Philosophy](#-scaling-philosophy)
 
@@ -23,21 +23,21 @@ Turn product requirements into maintainable system boundaries, applications, fea
 Install from your project with the shared [Skills CLI](https://github.com/vercel-labs/skills), the same installer used by Vercel’s agent skills. The current Skills CLI requires Node.js 22.20 or later.
 
 ```bash
-npx skills add kousshiikg/scalable-architecture --skill vaastu
+npx skills add KOUSHIKG04/scalable-architecture-skill --skill vaastu
 
 # Other package runners
-pnpm dlx skills add kousshiikg/scalable-architecture --skill vaastu
-bunx skills add kousshiikg/scalable-architecture --skill vaastu
+pnpm dlx skills add KOUSHIKG04/scalable-architecture-skill --skill vaastu
+bunx skills add KOUSHIKG04/scalable-architecture-skill --skill vaastu
 ```
 
 Choose the agents and installation method when prompted. Installation is project-local by default; add `-g` for a user-wide installation. The CLI manages agent-specific locations and links. For Codex, the project skill is available at `.agents/skills/vaastu/SKILL.md`.
 
 ```bash
 # List available skills without installing
-npx skills add kousshiikg/scalable-architecture --list
+npx skills add KOUSHIKG04/scalable-architecture-skill --list
 
 # Target Codex explicitly
-npx skills add kousshiikg/scalable-architecture --skill vaastu -a codex
+npx skills add KOUSHIKG04/scalable-architecture-skill --skill vaastu -a codex
 
 # Check and update installed skills
 npx skills check
@@ -257,5 +257,5 @@ The reference implementation is evidence for the principles, not a directory tre
 
 ## 📄 License
 
-[MIT](./LICENSE) © [KOUSHIK G](https://github.com/kousshiikg)
+[MIT](./LICENSE) © [KOUSHIK G](https://github.com/KOUSHIKG04)
 
