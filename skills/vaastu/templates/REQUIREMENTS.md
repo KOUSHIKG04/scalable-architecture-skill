@@ -82,14 +82,22 @@ What work may need queues/jobs/schedules, if anything?
 
 ## 13. Non-Functional Requirements
 
--   Expected users/traffic:
--   Availability:
--   Performance:
--   Security/privacy:
--   Compliance:
--   Offline behavior:
--   Accessibility:
--   Observability:
+Use measurable expectations for relevant concerns. Record the target, workload/environment, verification method and source/owner; leave unknown targets explicit instead of making up numbers. Mark irrelevant concerns with a reason. These requirements inform architecture choices and release acceptance, not a fixed infrastructure checklist.
+
+| Concern | Target / constraint | Workload or environment | Verification / evidence | Source / owner |
+| --- | --- | --- | --- | --- |
+| Expected users, concurrency and data volume | | | | |
+| Important workflow latency and throughput | | | | |
+| Availability and dependency failure behavior | | | | |
+| Security, permissions and tenant isolation | | | | |
+| Privacy, retention and deletion | | | | |
+| Supported platforms and accessibility | | | | |
+| Offline/realtime behavior, if needed | | | | |
+| Hosting, delivery and operating budget | | | | |
+| Failure visibility and operational ownership | | | | |
+| Recovery time and acceptable data loss | | | | |
+
+Define recovery time objective (acceptable time to restore service) and recovery point objective (acceptable data-loss window) where data/service recovery matters. Distinguish user expectations, verified measurements and assumptions. Identify applicable compliance obligations with the responsible owner; this template does not establish compliance.
 
 ## 14. Technology Constraints
 
@@ -106,7 +114,10 @@ What work may need queues/jobs/schedules, if anything?
 -   Team size:
 -   Timeline:
 -   Environments:
--   CI/CD:
+-   CI/CD and required checks:
+-   Release/configuration owner:
+-   Migration and recovery responsibilities:
+-   Incident ownership and investigation path:
 
 ## 16. Open Questions
 

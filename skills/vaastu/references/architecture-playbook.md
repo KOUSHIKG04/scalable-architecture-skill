@@ -216,7 +216,7 @@ Do not introduce microservices for theoretical future scale.
 
 ## 3. Architecture Decision Process
 
-Before creating files, produce an architecture brief.
+Before scaffolding a new system or making major boundary changes, present an architecture brief proportional to the task. Capture significant decisions in ADRs or the existing decision log; use the [feature delivery and evolution guide](feature-delivery.md) for significance, review and supersession. An implementation request retains its existing authorization.
 
 ### Step 1 --- Understand the product
 
@@ -851,6 +851,8 @@ legitimate consumers outside the feature.
 
 Run: - typecheck, - lint, - unit tests, - integration tests, -
 architecture boundary checks, - production build where appropriate.
+
+Apply the [feature Definition of Done](feature-delivery.md#definition-of-done), including acceptance evidence and architectural impact. Use the [security checklist](security-checklist.md) for affected trust/data risks and [deployment readiness](deployment-readiness.md) for release and operational checks. Record gaps rather than equating source changes with verified release readiness.
 
 ------------------------------------------------------------------------
 

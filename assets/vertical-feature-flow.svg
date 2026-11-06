@@ -1,47 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="428" viewBox="0 0 920 428" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="648" viewBox="0 0 1040 648" role="img" aria-labelledby="title desc">
 <title id="title">End-to-end vertical feature flow</title>
-<desc id="desc">UI / Client → Route / Adapter → Owning Feature → Runtime Validation → Authentication / Authorization → Application / Domain Logic → Data Access → Database / Integration → Response / Cache → UI Update. Follow the numbered steps and arrows.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
-<rect x="1" y="1" width="918" height="426" rx="14" fill="#f8fafc" stroke="#e2e8f0"/>
-<polyline points="296,56 321,56" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="596,56 621,56" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="760,88 760,121" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="624,156 599,156" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="324,156 299,156" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="160,188 160,221" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="296,256 321,256" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="596,256 621,256" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<polyline points="760,288 760,321" fill="none" stroke="#64748b" stroke-width="1.7" marker-end="url(#arrow)"/>
-<rect x="24" y="24" width="272" height="64" rx="24" fill="#eef2ff" stroke="#818cf8"/>
-<text x="39" y="43" fill="#64748b" font-family="Arial, sans-serif" font-size="10">01</text>
-<text x="165" y="61" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">UI / Client</text>
-<rect x="324" y="24" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="339" y="43" fill="#64748b" font-family="Arial, sans-serif" font-size="10">02</text>
-<text x="465" y="61" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Route / Adapter</text>
-<rect x="624" y="24" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="639" y="43" fill="#64748b" font-family="Arial, sans-serif" font-size="10">03</text>
-<text x="765" y="61" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Owning Feature</text>
-<rect x="624" y="124" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="639" y="143" fill="#64748b" font-family="Arial, sans-serif" font-size="10">04</text>
-<text x="765" y="161" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Runtime Validation</text>
-<rect x="324" y="124" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="339" y="143" fill="#64748b" font-family="Arial, sans-serif" font-size="10">05</text>
-<text x="465" y="152" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Authentication /</text>
-<text x="465" y="171" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Authorization</text>
-<rect x="24" y="124" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="39" y="143" fill="#64748b" font-family="Arial, sans-serif" font-size="10">06</text>
-<text x="165" y="152" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Application / Domain</text>
-<text x="165" y="171" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Logic</text>
-<rect x="24" y="224" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="39" y="243" fill="#64748b" font-family="Arial, sans-serif" font-size="10">07</text>
-<text x="165" y="261" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Data Access</text>
-<rect x="324" y="224" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="339" y="243" fill="#64748b" font-family="Arial, sans-serif" font-size="10">08</text>
-<text x="465" y="261" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Database / Integration</text>
-<rect x="624" y="224" width="272" height="64" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
-<text x="639" y="243" fill="#64748b" font-family="Arial, sans-serif" font-size="10">09</text>
-<text x="765" y="261" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">Response / Cache</text>
-<rect x="624" y="324" width="272" height="64" rx="24" fill="#eef2ff" stroke="#818cf8"/>
-<text x="639" y="343" fill="#64748b" font-family="Arial, sans-serif" font-size="10">10</text>
-<text x="765" y="361" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" font-weight="500">UI Update</text>
+<desc id="desc">UI / Client → Route / Adapter → Owning Feature → Runtime Validation → Authentication / Authorization → Application / Domain Logic → Data Access → Database / Integration → Response / Cache → UI Update. Arrows show the direction; numbers preserve the reading order.</desc>
+<defs>
+<linearGradient id="paper" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f4f1e9"/></linearGradient>
+<linearGradient id="ink" x2="0" y2="1"><stop stop-color="#373d36"/><stop offset="1" stop-color="#252b25"/></linearGradient>
+<linearGradient id="ochre" x2="0" y2="1"><stop stop-color="#f4d986"/><stop offset="1" stop-color="#eac466"/></linearGradient>
+<filter id="shadow" x="-15%" y="-30%" width="140%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+<marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 6 4 1 7" fill="none" stroke="#7a8173" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="1040" height="648" rx="20" fill="#f8f7f2"/>
+<g font-family="'Segoe UI', Inter, Arial, sans-serif">
+<text x="40" y="54" font-size="25" font-weight="600" letter-spacing="-.6" fill="#272e27">End-to-end vertical feature flow</text>
+<text x="40" y="81" font-size="15" fill="#62695e">Follow one request from the client and back</text>
+<path d="M40 102H1000" stroke="#dedfd5"/>
+<path d="M341 178H362" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M671 178H692" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M850 226V253" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M699 304H678" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M369 304H348" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M190 352V379" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M341 430H362" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M671 430H692" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M850 478V505" fill="none" stroke="#7a8173" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="43" y="150" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="40" y="142" width="300" height="84" rx="12" fill="#171d18"/>
+<rect x="40" y="136" width="300" height="84" rx="12" fill="url(#ink)" stroke="#363d34"/>
+<path d="M53 137H327" stroke="#636b5d" stroke-linecap="round" opacity=".75"/>
+<text x="59" y="183" font-size="13" font-weight="500" fill="#c5cebd">01</text>
+<path d="M87 165v26" stroke="#56604f"/>
+<text x="104" y="184" font-size="18" font-weight="500" letter-spacing="-.25" fill="#fffdf4">UI / Client</text>
+<rect x="373" y="150" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="370" y="142" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="370" y="136" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M383 137H657" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="389" y="183" font-size="13" font-weight="500" fill="#666e5c">02</text>
+<path d="M417 165v26" stroke="#dcded2"/>
+<text x="434" y="184" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Route / Adapter</text>
+<rect x="703" y="150" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="700" y="142" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="700" y="136" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M713 137H987" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="719" y="183" font-size="13" font-weight="500" fill="#666e5c">03</text>
+<path d="M747 165v26" stroke="#dcded2"/>
+<text x="764" y="184" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Owning Feature</text>
+<rect x="703" y="276" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="700" y="268" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="700" y="262" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M713 263H987" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="719" y="309" font-size="13" font-weight="500" fill="#666e5c">04</text>
+<path d="M747 291v26" stroke="#dcded2"/>
+<text x="764" y="310" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Runtime Validation</text>
+<rect x="373" y="276" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="370" y="268" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="370" y="262" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M383 263H657" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="389" y="309" font-size="13" font-weight="500" fill="#666e5c">05</text>
+<path d="M417 291v26" stroke="#dcded2"/>
+<text x="434" y="299" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Authentication /</text>
+<text x="434" y="321" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Authorization</text>
+<rect x="43" y="276" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="40" y="268" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="40" y="262" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M53 263H327" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="59" y="309" font-size="13" font-weight="500" fill="#666e5c">06</text>
+<path d="M87 291v26" stroke="#dcded2"/>
+<text x="104" y="299" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Application /</text>
+<text x="104" y="321" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Domain Logic</text>
+<rect x="43" y="402" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="40" y="394" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="40" y="388" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M53 389H327" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="59" y="435" font-size="13" font-weight="500" fill="#666e5c">07</text>
+<path d="M87 417v26" stroke="#dcded2"/>
+<text x="104" y="436" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Data Access</text>
+<rect x="373" y="402" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="370" y="394" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="370" y="388" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M383 389H657" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="389" y="435" font-size="13" font-weight="500" fill="#666e5c">08</text>
+<path d="M417 417v26" stroke="#dcded2"/>
+<text x="434" y="425" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Database /</text>
+<text x="434" y="447" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Integration</text>
+<rect x="703" y="402" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="700" y="394" width="300" height="84" rx="12" fill="#cecec1"/>
+<rect x="700" y="388" width="300" height="84" rx="12" fill="url(#paper)" stroke="#ddded3"/>
+<path d="M713 389H987" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="719" y="435" font-size="13" font-weight="500" fill="#666e5c">09</text>
+<path d="M747 417v26" stroke="#dcded2"/>
+<text x="764" y="436" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">Response / Cache</text>
+<rect x="703" y="528" width="300" height="84" rx="12" fill="#333c2a" opacity=".12" filter="url(#shadow)"/>
+<rect x="700" y="520" width="300" height="84" rx="12" fill="#b49141"/>
+<rect x="700" y="514" width="300" height="84" rx="12" fill="url(#ochre)" stroke="#d6b460"/>
+<path d="M713 515H987" stroke="#ffffff" stroke-linecap="round" opacity=".75"/>
+<text x="719" y="561" font-size="13" font-weight="500" fill="#666e5c">10</text>
+<path d="M747 543v26" stroke="#c9a950"/>
+<text x="764" y="562" font-size="18" font-weight="500" letter-spacing="-.25" fill="#293026">UI Update</text>
+</g>
 </svg>
