@@ -17,6 +17,12 @@ State observable success, invalid-input, denied-access, failure/recovery and app
 
 Inputs/outputs, validation, errors, identity and resource/tenant scope, state ownership, integrations, authoritative data, persistence/migrations, transaction and retry boundaries. Omit layers the feature does not use.
 
+## Client and trusted-operation behavior
+
+For affected boundaries, capture form/query ownership, loading/empty/pending/error states, accessibility/responsive acceptance, and mutation reconciliation. Define authoritative server fields, stable errors, permissions, concurrency, retry/unknown-outcome behavior, and supported-client compatibility. Omit concerns the feature does not use.
+
+Use the [frontend](../references/frontend-architecture.md), [backend](../references/backend-architecture.md), and [integration](../references/frontend-backend-integration.md) guides as relevant; do not repeat their contents.
+
 ## Implementation slices
 
 Dependency-ordered slices, necessary foundations, ownership and integration points. The first slice must prove one real user outcome.

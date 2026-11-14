@@ -1,7 +1,7 @@
 ---
 name: vaastu
 license: MIT
-description: Design or restructure multi-application TypeScript systems from product requirements. Use for architecture proposals, application and feature boundaries, shared packages, trusted backend operations, and dependency rules; avoid imposing a monorepo or extra layers on small projects.
+description: Plan, review, or restructure software architecture from product requirements. Use for frontend, backend, and full-stack design, feature boundaries, state ownership, API contracts, data access, shared code, and dependency rules. Adapt to the existing stack and keep layers proportional to the project.
 ---
 
 # Vaastu Skill
@@ -32,6 +32,10 @@ Turn requirements into justified boundaries and prove them with a real workflow.
 Paths below are relative to this skill folder.
 
 - [Architecture principles](references/architecture-principles.md): review ownership, boundaries, state, and security decisions.
+- [Frontend architecture](references/frontend-architecture.md): for screens, components, forms, rendering boundaries, state, accessibility, responsiveness, and UI performance; select only affected concerns.
+- [Backend architecture](references/backend-architecture.md): for trusted operations, domain ownership, persistence, concurrency, integrations, and jobs; keep layers proportional to the workflow.
+- [Frontend-backend integration](references/frontend-backend-integration.md): for contracts, error mapping, pagination, cache/session isolation, retries, and API evolution when a workflow crosses this boundary.
+- [Create-order walkthrough](examples/create-order.md): trace form-to-persistence behavior, failure recovery, acceptance evidence, and growth from one app to multiple clients.
 - [Detailed architecture playbook](references/architecture-playbook.md): consult the relevant sections for application/backend/data design, guardrails, review checklists, and construction guidance. Its full proposal outline applies to substantial new-system work; scale it to the user's task.
 - [Dependency rules](references/dependency-rules.md): define allowed imports and choose enforcement mechanisms.
 - [Architecture failure prevention and remediation](references/architecture-failure-remediation.md): for an affected architecture decision, use its Detect / Prevent / Fix / Verify guidance during design or authorized repair. Select relevant decisions; this is not an automatic audit or a requirement to redesign all 14 areas.

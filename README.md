@@ -8,15 +8,21 @@
 
 Turn product requirements into maintainable system boundaries, applications, features, contracts, backend operations, data access, persistence, shared packages, and infrastructure — **without blindly applying a fixed folder template.**
 
+Apply the framework to the project's existing language, frontend framework, server runtime, and deployment model. TypeScript and multi-application examples illustrate the decisions; they are not prerequisites.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/blob/main/LICENSE)
 [![CI Status](https://img.shields.io/github/actions/workflow/status/KOUSHIKG04/scalable-architecture-skill/architecture.yml?branch=main&label=CI&style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/actions)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/KOUSHIKG04/scalable-architecture-skill/pulls)
 
-[Quick Start](#-quick-start) • [Core Idea](#-core-idea) • [What It Optimizes For](#-what-this-skill-optimizes-for) • [When to Use](#-when-to-use-it) • [Agent Usage](#-agent-usage) • [Dependency Model](#-important-dependency-model) • [Scaling Philosophy](#-scaling-philosophy)
+[Website and guides](https://get-vaastu.vercel.app/) • [Quick Start](#-quick-start) • [Core Idea](#-core-idea) • [What It Optimizes For](#-what-this-skill-optimizes-for) • [When to Use](#-when-to-use-it) • [Agent Usage](#-agent-usage) • [Dependency Model](#-important-dependency-model) • [Scaling Philosophy](#-scaling-philosophy)
 
 </div>
 
 ---
+
+Visit the [Vaastu website](https://get-vaastu.vercel.app/) for installation, the architecture protocol, and practical guides. Start with [installing the skill](https://get-vaastu.vercel.app/guides/install-architecture-skill) or [planning frontend and backend architecture](https://get-vaastu.vercel.app/guides/frontend-backend-architecture).
+
+For focused workflows, read the [frontend architecture guide](https://get-vaastu.vercel.app/guides/frontend-architecture) or [backend architecture guide](https://get-vaastu.vercel.app/guides/backend-architecture). Both apply the same framework to the existing stack.
 
 ## Read Vaastu with an AI agent
 
@@ -229,6 +235,21 @@ Deliver dependency-ready features as real workflows using the [feature delivery 
 For substantial features, [FEATURE_SPEC.md](skills/vaastu/templates/FEATURE_SPEC.md) can capture the contract and evidence. Small changes do not need a separate specification. Use the [security/data checklist](skills/vaastu/references/security-checklist.md) for affected risks and [deployment readiness](skills/vaastu/references/deployment-readiness.md) for releases. These guides do not certify security or production readiness.
 
 ![Vertical feature flow: UI through validation, authorization, domain logic, persistence, and response](https://raw.githubusercontent.com/KOUSHIKG04/scalable-architecture-skill/main/assets/vertical-feature-flow.svg)
+
+---
+
+## Frontend, backend, and connected workflows
+
+Use the same framework for focused frontend work, backend operations, and complete features. Load only relevant guidance:
+
+| Work | Guide |
+| --- | --- |
+| Components, rendering, state, forms, accessibility, responsiveness, performance | [Frontend architecture](skills/vaastu/references/frontend-architecture.md) |
+| Trusted operations, persistence, concurrency, integrations, jobs | [Backend architecture](skills/vaastu/references/backend-architecture.md) |
+| Contracts, errors, cache/session isolation, retries, pagination, API evolution | [Frontend-backend integration](skills/vaastu/references/frontend-backend-integration.md) |
+| Connected workflow, failure cases, verification, and proportional growth | [Create-order walkthrough](skills/vaastu/examples/create-order.md) |
+
+These build on existing security, feature-delivery, and deployment resources. They do not require a separate backend service, shared package, or fixed layer hierarchy.
 
 ---
 
